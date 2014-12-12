@@ -1,0 +1,826 @@
+body {
+
+}
+
+h1 {
+    font: 60px/1.0em 'Coda', sans-serif;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font: 80px/1.025em 'Bowlby One', serif, Arial, sans-serif;
+    letter-spacing: -0.02em;
+    word-wrap: break-word;
+}
+
+h3 {
+    font: 70px/1.0em "amaticbold", Impact, sans-serif;
+    letter-spacing: -0.02em;
+    word-wrap: break-word;
+}
+
+h4 {
+    font: 38px/1.43em "ostrich_sansmedium", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
+    word-wrap: break-word;
+}
+
+h5 {
+    font: bold 20px/1.11em "ostrich_sansmedium", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.03em;
+}
+
+p {
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.doc-loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.doc-loader td {
+    background-color: gainsboro;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* navigation */
+div.main_menu {
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.new_main_menu {
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    cursor: pointer;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    -webkit-transition: background .9s ease-in-out, padding .9s ease-in-out;
+    -moz-transition: background .9s ease-in-out, padding .9s ease-in-out;
+    transition: background .9s ease-in-out, padding .9s ease-in-out;
+    background-color: #000;
+}
+
+.logo {
+    position: fixed;
+    width: 200px;
+    /*margin-top: 8px;*/
+    height: 70px;
+    background-image: url("../img/Paint-Brush-psd50308.png");
+    background-repeat: no-repeat;
+    /*display: none;*/
+}
+
+.summary {
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+div.main_menu nav {
+    height: 70px;
+    cursor: pointer;
+}
+
+div.main_menu nav ul {
+    height: 100%;
+}
+
+div.main_menu nav ul li {
+    display: inline-block;
+    height: 100%;
+    font: 11px/6.36em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.25em;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+div.main_menu nav ul li.first a {
+    padding-left: 0px;
+
+}
+
+div.main_menu nav ul li.last a {
+    padding-right: 0px;
+}
+
+div.main_menu nav a {
+    display: block;
+    padding-left: 18px;
+    padding-right: 18px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+div.main_menu nav ul li a:hover {
+    color: #db8e77;
+}
+
+div.main_menu nav ul li.active a {
+    color: #db8e77;
+}
+
+/* small menu
+================================================== */
+.small-menu-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.small-menu {
+    width: 100%;
+    height: 45px;
+    margin-top: 12px;
+    padding: 13px;
+    text-align: center;
+    font: 14px/2.2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: capitalize;
+    color: #3c3c3c;
+    border: 0;
+    outline: none;
+}
+
+/* home
+================================================== */
+.home {
+    width: 100%;
+    color: #444;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* Safari and Chrome */
+    -moz-background-size: cover; /* Firefox */
+    -o-background-size: cover; /* Internet Explorer */
+    background-size: cover; /* CSS3 */
+}
+
+.top_background {
+    background: url('../img/layeredcoloredwallLeftSm.jpg') no-repeat;
+    background-color: #e4dccb;
+    width: auto;
+    background-size: 100%;
+}
+
+.home_nav_img_content {
+    margin-top: 100px;
+    margin-bottom: 260px;
+}
+
+a.home_nav_img:hover {
+    background-position: left bottom;
+}
+
+.section_icon {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+/* service
+================================================== */
+.bio {
+    background-color: black;
+    color: #e4dccb;
+}
+
+.info {
+    font: 18px/1.94em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.info a:link, a:active, a:visited {
+    color: #db8e77;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #db8e77;
+    text-decoration: underline;
+}
+
+.apps {
+    color: #3d3d3a;
+}
+
+.apps_wrapper_top {
+    /*background: url();*/
+    /*poloroids here?*/
+    padding-top: 90px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.bg_top_apps_img {
+    width: 100%;
+    margin-top: 100px;
+    min-height: 450px;
+    margin-bottom: 100px;
+    background: transparent url(../img/accordion.jpeg) no-repeat;
+    background-position: center;
+    -webkit-background-size: contain; /* Safari and Chrome */
+    -moz-background-size: contain; /* Firefox */
+    -ms-background-size: contain; /* Internet Explorer */
+    -o-background-size: contain; /* Opera */
+    background-size: contain; /* CSS3 */
+}
+
+/* apps work
+================================================== */
+.full_width_apps {
+    padding-top: 150px;
+    padding-bottom: 55px;
+    background-color: #90AECA;
+}
+
+div.apps_work_image_slider_holder {
+    margin-left: 0;
+    width: auto;
+    position: relative;
+}
+
+ul#apps_work_image_slider li {
+    font-size: 0;
+    line-height: 0;
+}
+
+a#apps_work_prev {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+}
+
+a#apps_work_next {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+}
+
+.apps_full_screen_image {
+    width: 100%;
+    height: 1028px;
+    color: #db8e77;
+    background-image: url("../img/Window.JPG");
+    opacity: 47;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.apps_full_screen_title {
+    padding-top: 320px;
+}
+
+/* portfolio
+================================================== */
+ul.poloroids img {
+display: block;
+width: 190px;
+margin-bottom: 12px;
+}
+
+ul.poloroids a {
+    background: #fff;
+display: inline;
+float: left;
+margin: 0 0 27px 30px;
+width: auto;
+padding: 10px 10px 15px;
+text-align: center;
+font-family: "Marker Felt",sans-serif;
+text-decoration: none;
+color: #333;
+font-size: 18px;
+-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+-webkit-transform: rotate(-2deg);
+-webkit-transition: -webkit-transform .15s linear;
+}
+ul.polaroids a:after {
+  content: attr(title);
+}
+
+ul.polaroids a {
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+}
+
+/* Rotate all even images 2 degrees */
+ul.polaroids li:nth-child(even) a {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+}
+
+/* Don't rotate every third image, but offset its position */
+ul.polaroids li:nth-child(3n) a {
+  -webkit-transform: none;
+  -moz-transform: none;
+  position: relative;
+  top: -5px;
+}
+
+/* Rotate every fifth image by 5 degrees and offset it */
+ul.polaroids li:nth-child(5n) a {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  right: 5px;
+}
+
+/* Keep default rotate for every eighth, but offset it */
+ul.polaroids li:nth-child(8n) a {
+  position: relative;
+  top: 8px;
+  right: 5px;
+}
+
+/* Keep default rotate for every eleventh, but offset it */
+ul.polaroids li:nth-child(11n) a {
+  position: relative;
+  top: 3px;
+  left: -5px;
+}
+
+ul.polaroids a:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+/* Add drop shadows and smooth out the transition (Safari only) */
+ul.polaroids a {
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+
+/* On hover, darken the shadows a bit */
+ul.polaroids a {
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+}
+.print_wrapper_top {
+    background-color: #3f3a39;
+    padding-top: 90px;
+    margin: 0 auto;
+}
+
+.bg_top_print_img {
+    width: 100%;
+    min-height: 560px;
+    /*background: transparent url("../img/apple-cup-display-1883.jpg") no-repeat;*/
+    background-position: center;
+    -webkit-background-size: contain; /* Safari and Chrome */
+    -moz-background-size: contain; /* Firefox */
+    -ms-background-size: contain; /* Internet Explorer */
+    -o-background-size: contain; /* Opera */
+    background-size: contain; /* CSS3 */
+}
+
+.portfolio {
+    background-color: #3f3a39;
+    color: #ffffff;
+}
+
+.portfolio .info {
+    line-height: 40px;
+}
+
+#portfolio-items {
+    height: auto !important;
+}
+
+#portfolio-items li {
+    float: left;
+    font-size: 0;
+    position: relative;
+    line-height: 0;
+}
+
+#portfolio-items li img {
+    width: 100%;
+    height: auto;
+}
+
+#digital-items {
+    height: auto !important;
+}
+
+#digital-items li {
+    float: left;
+    font-size: 0;
+    position: relative;
+    line-height: 0;
+}
+
+#digital-items li img {
+    width: 100%;
+    height: auto;
+}
+
+#filter {
+    margin: 0 0 110px 0;
+}
+
+#filter li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 15px;
+    font: 20px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0;
+    color: #3d3d3a;
+    padding-left: 3px;
+}
+
+#filter li:hover {
+    cursor: pointer;
+}
+
+#filter li.current {
+    border-bottom: 5px solid;
+    border-color: #3d3d3a;
+}
+
+.portfolio_full_screen_image {
+    background-image: url("../img/accordion.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 990px;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.portfolio_gallery_bottom {
+    width: 100%;
+    height: 65px;
+    background-color: #3f3a39;
+}
+
+/* about
+================================================== */
+.bg_top_digital_img {
+    width: 100%;
+    min-height: 560px;
+    background: transparent url("../img/mando.JPG") no-repeat;
+    background-position: center;
+    -webkit-background-size: contain; /* Safari and Chrome */
+    -moz-background-size: contain; /* Firefox */
+    -ms-background-size: contain; /* Internet Explorer */
+    -o-background-size: contain; /* Opera */
+    background-size: contain; /* CSS3 */
+}
+
+.digital_wrapper_top {
+    background-color: #000000;
+    padding-top: 90px;
+    margin: 0 auto;
+}
+
+.digital_gallery_bottom {
+    width: 100%;
+    height: 65px;
+    background-color: #000000;
+}
+
+.digital_full_screen_image {
+    background-image: url("../img/1007Voiceworks243.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 990px;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.about {
+    background-color:#000000;
+    color: #b8afad;
+}
+
+.about h3 {
+    color: #b8afad;
+}
+
+/*
+==================================================*/
+
+.socio {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.socio ul {
+    margin: 0 auto;
+    width: 119px;
+    line-height: normal;
+}
+
+.socio ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+.socio ul li a {
+    display: block;
+    height: 33px;
+    width: 33px;
+}
+
+.socio ul li a:active {
+    background-position: left bottom;
+}
+
+.socio ul li a:hover {
+    background-position: left bottom;
+}
+
+a.socio_twitter {
+    /*background: transparent url('../images/twitter_icon.png') no-repeat;*/
+}
+
+a.socio_facebook {
+    /*background: transparent url('../images/facebook_icon.png') no-repeat;*/
+}
+
+a.socio_linkedin {
+    /*background: transparent url('../images/linkedin_icon.png') no-repeat;*/
+}
+
+a.socio_mail {
+    /*background: transparent url('../images/mail_icon.png') no-repeat;*/
+}
+
+a.socio_dribbble {
+    /*background: transparent url('../images/dribbble_icon.png') no-repeat;*/
+}
+
+a.socio_pinterest {
+    /*background: transparent url('../images/pinterest_icon.png') no-repeat;*/
+}
+
+a.socio_flickr {
+    /*background: transparent url('../images/flickr_icon.png') no-repeat;*/
+}
+
+.tem_description {
+    font: 16px/1.56em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
+    margin-bottom: 200px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/* photo
+================================================== */
+.photo {
+    background-color: #db8e77;
+    color: #3d3d3a;
+}
+
+.photo_wrapper_top {
+    background-color: #db8e77;
+    padding-top: 90px;
+    margin: 0 auto;
+}
+
+.bg_top_photo_img {
+    width: 100%;
+    min-height: 560px;
+    /*background: transparent url("../img/") no-repeat;*/
+    background-position: center;
+    -webkit-background-size: contain; /* Safari and Chrome */
+    -moz-background-size: contain; /* Firefox */
+    -ms-background-size: contain; /* Internet Explorer */
+    -o-background-size: contain; /* Opera */
+    background-size: contain; /* CSS3 */
+}
+
+.full_width_photo {
+    padding-top: 150px;
+    padding-bottom: 55px;
+    background-color: #db8e77;
+}
+
+div.photo_work_image_slider_holder {
+    margin-left: 0;
+    width: auto;
+    position: relative;
+}
+
+.photo_work_image_slider {
+    position: absolute;
+    display: block;
+    font: 22px/1.36em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+ul#photo_work_image_slider li {
+    font-size: 0;
+    line-height: 0;
+}
+
+a#photo_work_prev {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+}
+
+a#photo_work_next {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+}
+
+.photo_work_image_slider {
+    color: ghostwhite;
+}
+
+.full_width_photos {
+    padding-top: 150px;
+    padding-bottom: 55px;
+    background-color: black;
+}
+
+div.photos_work_image_slider_holder {
+    margin-left: 0;
+    width: auto;
+    position: relative;
+}
+
+.photos_work_image_slider {
+    position: absolute;
+    display: block;
+    font: 22px/1.36em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+ul#photos_work_image_slider li {
+    font-size: 0;
+    line-height: 0;
+}
+
+a#photos_work_prev {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+}
+
+a#photos_work_next {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+}
+
+.photos_work_image_slider {
+    color: #ffffff;
+}
+
+.photo_full_screen_image {
+    width: 100%;
+    height: 1054px;
+    color: #fff;
+    background-image: url(../img/grass.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background: cover;
+
+}
+
+.blog_full_screen_title {
+    padding-top: 150px;
+    font-size: 40px;
+    margin-bottom: 200px;
+}
+
+.info#upsell {
+    margin-top: 40px;
+
+}
+
+/* contact
+================================================== */
+.contact {
+    color: #3d3d3a;
+}
+
+.contact_wrapper {
+    padding-bottom: 120px;
+    background-color: #edebe0;
+}
+
+.m_left_cotact_info {
+    margin-left: 17%;
+}
+
+.contact_info {
+    font: 18px/1.94em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.contact a:link, a:visited, a:active {
+    color: #c15961;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #c15961;
+    text-decoration: underline;
+}
+
+.socio_contact {
+    margin-bottom: 20px;
+    height: 33px;
+}
+
+.socio_contact ul {
+    width: 253px;
+    line-height: normal;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socio_contact ul li {
+    float: left;
+    margin-right: 11px;
+}
+
+.socio_contact ul li a {
+    display: block;
+    height: 33px;
+    width: 33px;
+}
+
+.socio_contact ul li a:active {
+    background-position: left bottom;
+}
+
+.socio_contact ul li a:hover {
+    background-position: left bottom;
+}
+
+a.socio_contact_mail {
+    /*background: transparent url('../images/mail_icon.png') no-repeat;*/
+}
+
+a.socio_contact_twitter {
+    /*background: transparent url('../images/twitter_icon.png') no-repeat;*/
+}
+
+a.socio_contact_etsy {
+    /*background: transparent url('../images/etsy_icon.png') no-repeat;*/
+}
+
+a.socio_contact_facebook {
+    /*background: transparent url('../images/facebook_icon.png') no-repeat;*/
+}
+
+a.socio_contact_dribbble {
+    /*background: transparent url('../images/dribbble_icon.png') no-repeat;*/
+}
+
+a.socio_contact_pinterest {
+    /*background: transparent url('../images/pinterest_icon.png') no-repeat;*/
+}
+
+a.socio_contact_flickr {
+    /*background: transparent url('../images/flickr_icon.png') no-repeat;*/
+}
+
+a.socio_contact_instagram {
+    /*background: transparent url('../images/instagram_icon.png') no-repeat;*/
+}
+
+/* footer
+================================================== */
+footer {
+    background-color: #edebe0;
+}
+
+.copyright p {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font: 16px/1.94em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
+    color: #3d3d3a;
+}

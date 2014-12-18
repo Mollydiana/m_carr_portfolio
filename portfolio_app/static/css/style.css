@@ -20,13 +20,13 @@ h3 {
 }
 
 h4 {
-    font: 38px/1.43em "ostrich_sansmedium", Helvetica, Arial, sans-serif;
+    font: 38px/1.43em "Open Sans Condensed", Helvetica, Arial, sans-serif;
     letter-spacing: -0.02em;
     word-wrap: break-word;
 }
 
 h5 {
-    font: bold 20px/1.11em "ostrich_sansmedium", Helvetica, Arial, sans-serif;
+    font: bold 23px/1.11em "Open Sans Condensed", Helvetica, Arial, sans-serif;
     letter-spacing: -0.03em;
 }
 
@@ -69,6 +69,7 @@ div.main_menu {
     height: 70px;
     z-index: 999;
     cursor: pointer;
+    background: black
 }
 
 .new_main_menu {
@@ -84,15 +85,15 @@ div.main_menu {
     background-color: #000;
 }
 
-.logo {
-    position: fixed;
-    width: 200px;
-    /*margin-top: 8px;*/
-    height: 70px;
-    background-image: url("../img/Paint-Brush-psd50308.png");
-    background-repeat: no-repeat;
-    /*display: none;*/
-}
+/*.logo {*/
+/*position: fixed;*/
+/*width: 200px;*/
+/*margin-top: 8px;*/
+/*height: 70px;*/
+/*background-image: url("../img/Paint-Brush-psd50308.png");*/
+/*background-repeat: no-repeat;*/
+/*display: none;*/
+/*}*/
 
 .summary {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -106,15 +107,16 @@ div.main_menu nav {
 
 div.main_menu nav ul {
     height: 100%;
+    margin-right: -35px;
 }
 
 div.main_menu nav ul li {
     display: inline-block;
     height: 100%;
-    font: 11px/6.36em "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: 0.25em;
+    font: 20px/6.36em "Amatic SC";
+    letter-spacing: 0.18em;
     list-style-type: none;
-    text-transform: uppercase;
+    margin-top: -28px;
 }
 
 div.main_menu nav ul li.first a {
@@ -131,7 +133,7 @@ div.main_menu nav a {
     padding-left: 18px;
     padding-right: 18px;
     text-decoration: none;
-    color: #fff;
+    color: white;
     cursor: pointer;
 }
 
@@ -179,12 +181,48 @@ div.main_menu nav ul li.active a {
 }
 
 .top_background {
-    background: url('../img/layeredcoloredwallLeftSm.jpg') no-repeat;
-    background-color: #e4dccb;
-    width: auto;
-    background-size: 100%;
+    width: 100%;
+    color: black;
+    background-image: url("../img/Window%20copy.jpg");
+    opacity: 47;
+    background-position: center bottom -25%;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 
+
+.home_nav_img_content {
+    margin-top: 260px;
+    margin-bottom: 260px;
+}
+
+.m_carr_header {
+    margin-top: 40px;
+    opacity: 0.8;
+    z-index: 1000;
+    margin-left: -242px;
+}
+
+.strip {
+    background: rgba(255, 255, 255, 0.4);
+    border: 0px;
+    /* position: relative; */
+    /* -webkit-border-radius: 4px; */
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    /* border-radius: 4px; */
+    /* box-shadow: 0 1px 4px rgba(0,0,0,.2); */
+    /* -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); */
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+    zoom: 1;
+    width: 200%;
+    margin-left: -500px;
+    margin-top: -64px;
+}
+.title{
+padding-bottom: 30px;
+}
 .home_nav_img_content {
     margin-top: 100px;
     margin-bottom: 260px;
@@ -203,7 +241,7 @@ a.home_nav_img:hover {
 ================================================== */
 .bio {
     background-color: black;
-    color: #e4dccb;
+    color: white;
 }
 
 .info {
@@ -296,91 +334,94 @@ a#apps_work_next {
 /* portfolio
 ================================================== */
 ul.poloroids img {
-display: block;
-width: 190px;
-margin-bottom: 12px;
+    display: block;
+    width: 190px;
+    margin-bottom: 12px;
 }
 
 ul.poloroids a {
     background: #fff;
-display: inline;
-float: left;
-margin: 0 0 27px 30px;
-width: auto;
-padding: 10px 10px 15px;
-text-align: center;
-font-family: "Marker Felt",sans-serif;
-text-decoration: none;
-color: #333;
-font-size: 18px;
--webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
--moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
--webkit-transform: rotate(-2deg);
--webkit-transition: -webkit-transform .15s linear;
+    display: inline;
+    float: left;
+    margin: 0 0 27px 30px;
+    width: auto;
+    padding: 10px 10px 15px;
+    text-align: center;
+    font-family: "Marker Felt", sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    -webkit-transform: rotate(-2deg);
+    -webkit-transition: -webkit-transform .15s linear;
 }
+
 ul.polaroids a:after {
-  content: attr(title);
+    content: attr(title);
 }
 
 ul.polaroids a {
-  -webkit-transform: rotate(-2deg);
-  -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
 }
 
 /* Rotate all even images 2 degrees */
 ul.polaroids li:nth-child(even) a {
-  -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
 }
 
 /* Don't rotate every third image, but offset its position */
 ul.polaroids li:nth-child(3n) a {
-  -webkit-transform: none;
-  -moz-transform: none;
-  position: relative;
-  top: -5px;
+    -webkit-transform: none;
+    -moz-transform: none;
+    position: relative;
+    top: -5px;
 }
 
 /* Rotate every fifth image by 5 degrees and offset it */
 ul.polaroids li:nth-child(5n) a {
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  position: relative;
-  right: 5px;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    position: relative;
+    right: 5px;
 }
 
 /* Keep default rotate for every eighth, but offset it */
 ul.polaroids li:nth-child(8n) a {
-  position: relative;
-  top: 8px;
-  right: 5px;
+    position: relative;
+    top: 8px;
+    right: 5px;
 }
 
 /* Keep default rotate for every eleventh, but offset it */
 ul.polaroids li:nth-child(11n) a {
-  position: relative;
-  top: 3px;
-  left: -5px;
+    position: relative;
+    top: 3px;
+    left: -5px;
 }
 
 ul.polaroids a:hover {
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  position: relative;
-  z-index: 5;
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    position: relative;
+    z-index: 5;
 }
+
 /* Add drop shadows and smooth out the transition (Safari only) */
 ul.polaroids a {
-  -webkit-transition: -webkit-transform .15s linear;
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -webkit-transition: -webkit-transform .15s linear;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
 }
 
 /* On hover, darken the shadows a bit */
 ul.polaroids a {
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
 }
+
 .print_wrapper_top {
     background-color: #3f3a39;
     padding-top: 90px;
@@ -514,7 +555,7 @@ ul.polaroids a {
 }
 
 .about {
-    background-color:#000000;
+    background-color: #000000;
     color: #b8afad;
 }
 

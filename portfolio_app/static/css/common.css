@@ -55,9 +55,12 @@
 	left: 0;
 	position: absolute;
 	background-color: #000;
+    border-radius: 100%;
 	-moz-opacity: 0.1;
 	opacity:.1;
 	filter: alpha(opacity=10);	/* For IE8 and earlier */
+    padding: 2%;
+    margin-left: -1%;
 }
 a.preview img
 {

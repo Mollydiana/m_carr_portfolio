@@ -8,7 +8,7 @@ h1 {
 }
 
 h2 {
-    font: 80px/1.025em 'Bowlby One', serif, Arial, sans-serif;
+    font: 88px/1.025em 'Amatic SC';
     letter-spacing: -0.02em;
     word-wrap: break-word;
 }
@@ -178,6 +178,7 @@ div.main_menu nav ul li.active a {
     -moz-background-size: cover; /* Firefox */
     -o-background-size: cover; /* Internet Explorer */
     background-size: cover; /* CSS3 */
+
 }
 
 .top_background {
@@ -189,7 +190,6 @@ div.main_menu nav ul li.active a {
     background-repeat: no-repeat;
     background-color: black;
 }
-
 
 .home_nav_img_content {
     margin-top: 260px;
@@ -220,23 +220,39 @@ div.main_menu nav ul li.active a {
     margin-left: -500px;
     margin-top: -64px;
 }
-.title{
-padding-bottom: 30px;
+
+.title {
+    padding-bottom: 30px;
 }
+
 .home_nav_img_content {
     margin-top: 100px;
     margin-bottom: 260px;
 }
 
+a.home_nav_img {
+    display: inline-block;
+    width: 100px;
+    height: 64px;
+    background-image: url('../img/arrow.png');
+    background-repeat: no-repeat;
+    margin-top: -79px;
+}
+
 a.home_nav_img:hover {
-    background-position: left bottom;
+    /*background-position: left bottom;*/
+    -webkit-filter: invert(39%);
+    filter: invert(39%);
 }
 
 .section_icon {
     margin-top: 70px;
     margin-bottom: 50px;
 }
+.projects {
+    border-radius: 100%;
 
+}
 /* service
 ================================================== */
 .bio {
@@ -245,8 +261,19 @@ a.home_nav_img:hover {
 }
 
 .info {
-    font: 18px/1.94em "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: -0.02em;
+    font: 31px/1.54em "Reenie Beanie";
+    letter-spacing: -0.01em;
+    /*background-color: white;*/
+    /*color: black;*/
+
+}
+
+.info_about_me {
+    font: 31px/1.54em "Reenie Beanie";
+    letter-spacing: -0.01em;
+    background-color: white;
+    color: black;
+
 }
 
 .info a:link, a:active, a:visited {
@@ -292,6 +319,12 @@ a.home_nav_img:hover {
     padding-top: 150px;
     padding-bottom: 55px;
     background-color: #90AECA;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* Safari and Chrome */
+    -moz-background-size: cover; /* Firefox */
+    -o-background-size: cover; /* Internet Explorer */
+    background-size: cover; /* CSS3 */
 }
 
 div.apps_work_image_slider_holder {
@@ -320,11 +353,16 @@ a#apps_work_next {
 .apps_full_screen_image {
     width: 100%;
     height: 1028px;
-    color: #db8e77;
-    background-image: url("../img/Window.JPG");
-    opacity: 47;
-    background-position: center top;
+    color: #fdfef9;
+    text-shadow: 0px 2px 10px #000;
+    background-image: url("../img/moroccoSQ.jpg");
     background-repeat: no-repeat;
+    -webkit-background-size: cover; /* Safari and Chrome */
+    -moz-background-size: cover; /* Firefox */
+    -o-background-size: cover; /* Internet Explorer */
+    background-size: cover; /* CSS3 */
+    /*background-attachment: inherit;*/
+
 }
 
 .apps_full_screen_title {
@@ -438,6 +476,7 @@ ul.polaroids a {
     -ms-background-size: contain; /* Internet Explorer */
     -o-background-size: contain; /* Opera */
     background-size: contain; /* CSS3 */
+    border-radius: 100%;
 }
 
 .portfolio {
@@ -458,6 +497,8 @@ ul.polaroids a {
     font-size: 0;
     position: relative;
     line-height: 0;
+    padding: 2%;
+    margin-left: -1%;
 }
 
 #portfolio-items li img {
@@ -644,11 +685,13 @@ a.socio_flickr {
     padding-top: 90px;
     margin: 0 auto;
 }
-
+.iframe_border {
+        border: 29px solid black;
+}
 .bg_top_photo_img {
     width: 100%;
     min-height: 560px;
-    /*background: transparent url("../img/") no-repeat;*/
+    /*background: transparent url("../img/paint.jpg") no-repeat;*/
     background-position: center;
     -webkit-background-size: contain; /* Safari and Chrome */
     -moz-background-size: contain; /* Firefox */
@@ -657,11 +700,11 @@ a.socio_flickr {
     background-size: contain; /* CSS3 */
 }
 
-.full_width_photo {
-    padding-top: 150px;
-    padding-bottom: 55px;
-    background-color: #db8e77;
-}
+/*.full_width_photo {*/
+/*padding-top: 150px;*/
+/*padding-bottom: 55px;*/
+/*background-color: cadetblue;*/
+/*}*/
 
 div.photo_work_image_slider_holder {
     margin-left: 0;
@@ -745,6 +788,7 @@ a#photos_work_next {
     background-position: center;
     background-repeat: no-repeat;
     background: cover;
+    opacity: 0.8;
 
 }
 
@@ -780,7 +824,7 @@ a#photos_work_next {
 }
 
 .contact a:link, a:visited, a:active {
-    color: #c15961;
+    color: b1;
     text-decoration: none;
 }
 

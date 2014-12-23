@@ -45,13 +45,6 @@ $(window).bind("scroll", function () {
 });
 
 $(window).resize(function () {
-//    if ($(window).width() > 1117) {
-//        $(".top_background").css('padding-bottom', '500px');
-//
-//    }
-//    else {
-//        $(".top_background").css('padding-bottom', '0');
-//    }
     if ($(window).width() < 522) {
         $(".top_background").css('margin-bottom', '-455px');
 

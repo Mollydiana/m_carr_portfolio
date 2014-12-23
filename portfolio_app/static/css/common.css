@@ -59,8 +59,8 @@
 	-moz-opacity: 0.1;
 	opacity:.1;
 	filter: alpha(opacity=10);	/* For IE8 and earlier */
-    padding: 2%;
-    margin-left: -1%;
+    /*padding: 2%;*/
+    /*margin-left: -1%;*/
 }
 a.preview img
 {

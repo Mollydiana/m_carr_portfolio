@@ -191,9 +191,11 @@ div.main_menu nav ul li.active a {
     background-color: black;
 }
 
-.home_nav_img_content {
-    margin-top: 260px;
-    margin-bottom: 260px;
+
+.home_nav_img {
+    height: 95%;
+    margin-top: -260px;
+    margin-left: -195px;
 }
 
 .m_carr_header {
@@ -230,29 +232,31 @@ div.main_menu nav ul li.active a {
     margin-bottom: 260px;
 }
 
-a.home_nav_img {
-    display: inline-block;
-    width: 100px;
-    height: 64px;
-    background-image: url('../img/arrow.png');
-    background-repeat: no-repeat;
-    margin-top: -79px;
-}
+/*a.home_nav_img {*/
+    /*display: inline-block;*/
+    /*width: 100px;*/
+    /*height: 64px;*/
+    /*background-image: url('../img/chevron.png');*/
+    /*background-repeat: no-repeat;*/
+    /*margin-top: -79px;*/
+/*}*/
 
-a.home_nav_img:hover {
+a.home_nav_img_content:hover {
     /*background-position: left bottom;*/
-    -webkit-filter: invert(39%);
-    filter: invert(39%);
+    -webkit-filter: invert(40%);
+    filter: invert(40%);
 }
 
 .section_icon {
     margin-top: 70px;
     margin-bottom: 50px;
 }
+
 .projects {
     border-radius: 100%;
 
 }
+
 /* service
 ================================================== */
 .bio {
@@ -269,7 +273,7 @@ a.home_nav_img:hover {
 }
 
 .info_about_me {
-    font: 31px/1.54em "Reenie Beanie";
+    font: 34px/1.54em "Reenie Beanie";
     letter-spacing: -0.01em;
     background-color: white;
     color: black;
@@ -468,15 +472,14 @@ ul.polaroids a {
 
 .bg_top_print_img {
     width: 100%;
-    min-height: 560px;
-    /*background: transparent url("../img/apple-cup-display-1883.jpg") no-repeat;*/
-    background-position: center;
-    -webkit-background-size: contain; /* Safari and Chrome */
-    -moz-background-size: contain; /* Firefox */
-    -ms-background-size: contain; /* Internet Explorer */
-    -o-background-size: contain; /* Opera */
-    background-size: contain; /* CSS3 */
-    border-radius: 100%;
+min-height: 420px;
+background-position: center;
+-webkit-background-size: contain;
+-moz-background-size: contain;
+-ms-background-size: contain;
+-o-background-size: contain;
+background-size: contain;
+border-radius: 100%;
 }
 
 .portfolio {
@@ -497,8 +500,8 @@ ul.polaroids a {
     font-size: 0;
     position: relative;
     line-height: 0;
-    padding: 2%;
-    margin-left: -1%;
+    /*padding: 2%;*/
+    margin-left: 3%;
 }
 
 #portfolio-items li img {
@@ -546,7 +549,7 @@ ul.polaroids a {
 }
 
 .portfolio_full_screen_image {
-    background-image: url("../img/accordion.jpg");
+    background-image: url("../img/dadnme.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     height: 990px;
@@ -685,9 +688,11 @@ a.socio_flickr {
     padding-top: 90px;
     margin: 0 auto;
 }
+
 .iframe_border {
-        border: 29px solid black;
+    border: 29px solid black;
 }
+
 .bg_top_photo_img {
     width: 100%;
     min-height: 560px;
@@ -783,17 +788,17 @@ a#photos_work_next {
 .photo_full_screen_image {
     width: 100%;
     height: 1054px;
-    color: #fff;
+    color: #fdfef9;;
     background-image: url(../img/grass.JPG);
     background-position: center;
     background-repeat: no-repeat;
     background: cover;
-    opacity: 0.8;
+    text-shadow: -1px -1px 19px #000;
 
 }
 
 .blog_full_screen_title {
-    padding-top: 150px;
+    padding-top: 253px;
     font-size: 40px;
     margin-bottom: 200px;
 }

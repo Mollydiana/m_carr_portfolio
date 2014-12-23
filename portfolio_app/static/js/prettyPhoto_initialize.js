@@ -1,6 +1,3 @@
-/**
- * Created by mollymendelsohn-carr on 10/23/14.
- */
 $(document).ready(function() {
 	$('a[data-rel]').each(function() {
 		$(this).attr('rel', $(this).data('rel'));

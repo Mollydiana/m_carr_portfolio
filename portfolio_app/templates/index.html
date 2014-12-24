@@ -17,10 +17,8 @@
     <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"/>
     <link type="text/css" rel="stylesheet" href="{% static 'css/responsive.css' %}"/>
 
-    <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie|Loved+by+the+King|Permanent+Marker|Josefin+Sans:400,600|Shadows+Into+Light|Amatic+SC:400,700|Lato:300,400,700|Coda|Bowlby+One|Open+Sans+Condensed:300|Neucha|Patrick+Hand+SC|Walter+Turncoat|Just+Me+Again+Down+Here|Covered+By+Your+Grace'
-    '
-    rel='stylesheet'
-    type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie|Loved+by+the+King|Permanent+Marker|Josefin+Sans:400,600|Shadows+Into+Light|Amatic+SC:400,700|Lato:300,400,700|Coda|Bowlby+One|Open+Sans+Condensed:300|Patrick+Hand+SC|Walter+Turncoat|Just+Me+Again+Down+Here|Covered+By+Your+Grace|Neucha|Waiting+for+the+Sunrise|Annie+Use+Your+Telescope|Nothing+You+Could+Do'
+          rel='stylesheet' type='text/css'>
 
 
     <script type="text/javascript" src="{% static 'js/jquery-1.8.1.min.js' %}"></script>
@@ -121,15 +119,21 @@
         </div>
         <div class="clear"></div>
         <div class="one m_bottom_100 center last">
-            <h4>"We can be forgiven our orderliness,
+            <p class="info">"We can be forgiven our orderliness,
                 but never: the taming of the free spirit of inquiry, nor the loss of enthusiasm,
                 nor the dimming of the vital spark of faith in our free ideals."<br><br>
-                —Josephine Whitney Duveneck</h4>
+                —Josephine Whitney Duveneck</p>
             <h5>&nbsp;</h5>
         </div>
+
         <div class="clear"></div>
 
         <div class="one m_bottom_130 center last">
+            <div class="polaroid">
+
+  <img src="{% static 'img/profile.jpg' %}">
+
+</div>
             <div><br><br><br>
 
                 <p class="info_about_me">
@@ -164,7 +168,7 @@
                 <br><br><br>
 
                 <h2>
-                    Passionate about web design and creating beautiful, simple, intuitive and user-friendly interfaces.
+                    i am passionate about web design and creating beautiful, simple, intuitive and user-friendly interfaces.
                 </h2>
             </div>
         </div>
@@ -183,11 +187,11 @@
             <div class="one center last">
             </div>
             <div class="one m_bottom_100 center last">
-                <h2>
-                    Here are some examples of websites and projects I've built</h2>
+                <p class="sites">
+                    Here are some examples of websites and projects I've designed and built:</p>
 
                 <p>&nbsp;</p>
-                <h5>Click on the images to link to github and/or deployed sites</h5>
+{#                <h5>Click on the images to link to github and/or deployed sites</h5>#}
             </div>
             <div class="clear"></div>
         </div>
@@ -198,11 +202,12 @@
     <div class="bg_top_print_img center">
 
         <ul id="portfolio-items" class="gallery">
-            <a href="http://www.dianavilar.com">
-                <li class="example logos web">
-                    <img class="projects" src="{% static 'img/Diana.png' %}" width="60" height="60" alt="Diana"/>
-                </li>
-            </a>
+
+            <li class="example logos web">
+                <a href="http://www.dianavilar.com"><img class="projects" src="{% static 'img/Diana.png' %}" width="60"
+                                                         height="60" alt="Diana"/></a>
+            </li>
+
             <li class="photos whatever">
                 <a href="http://polar-shelf-5724.herokuapp.com/"><img class="projects"
                                                                       src="{% static 'img/donations.jpg' %}"
@@ -214,17 +219,16 @@
 
 
             </li>
-<li class="example">
-                <a class="preview" href="https://github.com/Mollydiana/arcade"><img class="projects" src="{% static 'img/oldport.jpg' %}"
-                                                             alt=""/></a>
+            <li class="example">
+                <a class="preview" href="https://github.com/Mollydiana/studentattendance"><img class="projects"
+                                                                                               src="{% static 'img/oldport.jpg' %}"
+                                                                                               alt=""/></a>
 
             <li class="photos">
-                <a class="https://github.com/Mollydiana/arcade"><img class="projects" src="{% static 'img/paint.jpg' %}"
-                                                             alt=""/></a></li>
+                <a class="preview" href="https://github.com/Mollydiana/Wanderful"><img class="projects"
+                                                                                       src="{% static 'img/wanderful.png' %}"
+                                                                                       alt=""/></a></li>
 
-
-
-            </li>
         </ul>
     </div>
     <div class="full_width">
@@ -242,32 +246,53 @@
 <!--digital-->
 <div class="section about" id="digital">
     <div class="digital_wrapper_top">
-        <div class="bg_top_digital_img center"></div>
+        <div class="bg_top_digital_img center"><img style="height: 345px;
+             border: 2px solid white;" src="{% static 'img/mando.JPG' %}"/></div>
+
         <div class="container">
             <div class="one center last">
             </div>
             <div class="one m_bottom_100 center last">
-                <h3>
-                    Something about music</h3>
-
-                <p>&nbsp;</p>
-                <h5>blablablablablablablabl</h5>
             </div>
             <div class="clear"></div>
             <div class="one m_bottom_90 center last">
-                <p class="h5">
-                    I grew up in a family of musicians. I only dabbled in music, until in my early 20’s,
-                    when my father persuaded my brother and me to come with him and be his backup band
-                    on a tour of Galicia (the celtic province in the northwest of Spain). Although we were only supposed
-                    to be there for two weeks, I ended up staying for nearly three years, during which time I resolved
-                    to learn all that I could about the culture.  While I was there, I
-                    began to seriously play the mandolin, the fiddle and the accordion and was blessed to inherit a
-                    repertoire
-                    of songs and melodies that have been passed on for generations. I helped form a band and recorded a cd of
-                    traditional music (http://www.cdbaby.com/cd/AsFaiscas). I brought the band back to the U.S. where we
+                <p class="music">
+                    I grew up in a family of musicians. I only dabbled in music until my early 20’s,
+                    when my father persuaded my brother and me to come with him as his backup band
+                    on a tour of Galicia (the celtic province in northwest Spain). <br><br>
+
+                    <iframe width="320" height="215" src="//www.youtube.com/embed/cQnUvZt7mvQ" frameborder="0"
+                            allowfullscreen></iframe>
+                    <iframe width="320" height="215" src="//www.youtube.com/embed/UcVK8jliv58" frameborder="0"
+                            allowfullscreen></iframe>
+                    <br><br>
+                    Although we were only supposed to be there for two weeks, I ended up staying for nearly three years.
+                    While I was there, I began to seriously play the mandolin, the fiddle and the accordion and was blessed to inherit a
+                    repertoire of songs and melodies that have been passed on for generations.
+                    I helped form a band and
+                    recorded a
+                    CD of traditional music.
+                    I brought the band back to the U.S.
+                    where we
                     toured the West Coast, introducing many people to the wonderful and unique spirit of Galician
-                    culture. In 2012 I recorded an albumn with my mother, father and brother entitled The Family Carr.
-                    On it we played traditional songs from Galicia, Ireland, Appalachia and Quebec.  </h5>
+                    culture.<br><br>
+                    <iframe width="420" height="315" src="//www.youtube.com/embed/yp_5b5Xo2YY" frameborder="0"
+                            allowfullscreen></iframe>
+                    <br><br>
+                    In 2012 I recorded an albumn with my mother, father and brother entitled 'The Family Carr'.
+                    On it we played traditional songs from Galicia, Ireland, Appalachia and Quebec.
+                </p>
+
+                <div class="cd_display">
+                    <img class='cds' src="{% static 'img/faiscas.jpg' %}"><br><br>
+                    <img class="cds" src="{% static 'img/familband.jpg' %}"/><br>
+                </div>
+                <br>
+                <a href="https://itunes.apple.com/us/album/as-faiscas/id393589672?uo=4" target="itunes_store"
+                   style="margin-right: 25%; display: inline-block; overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.png) no-repeat;width:110px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.svg);}"></a>
+
+                <a href="https://itunes.apple.com/us/album/the-family-carr/id566486716?uo=4" target="itunes_store"
+                   style="display: inline-block; overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.png) no-repeat;width:110px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.svg);}"></a>
             </div>
         </div>
         <!--end container-->
@@ -289,56 +314,42 @@
 {#<!--photo-->#}
 <div class="section photo" id="photo">
     <div class="photo_wrapper_top">
-        <div class="bg_top_photo_img center">
-            <iframe class="iframe_border" width="720" height="515" src="//www.youtube.com/embed/2XOlgM_9fWk"
-                    frameborder="0" allowfullscreen></iframe>
-        </div>
+
         <div class="container">
             <div class="one center last">
             </div>
             <div class="one m_bottom_100 center last">
-                <h3>Language</h3>
 
                 <p>&nbsp;</p>
-                <h5>bakajkajkja</h5>
             </div>
             <div class="clear"></div>
             <div class="one m_bottom_90 center last">
-                <p class="info">
-                    While living in Galicia from 2008-2011, I became more and more fascinated with its rich culture and language.
+                <p class="language_about">
+                    While living in Galicia from 2008-2011, I became more and more fascinated with its rich culture and
+                    language.
                     I learned Spanish and Galego, the native Galician
-                    language. I became so fascinated by the peoples’ struggle to preserve their language and culture
-                    from being absorbed by the more dominant Spanish culture, that I made a documentary about it so that
-                    I could share their story. (https://www.youtube.com/watch?v=2XOlgM_9fWk).<br><br>
-                    The study of and teaching of languages nurtured my fascination with communication in general.
+                    language. I became so fascinated by the peoples’ struggle to preserve their language and culture, that I made this short documentary
+                    so that I could share their story. <br><br>
+                    <iframe class="iframe_margin" width="540" height="375" src="//www.youtube.com/embed/2XOlgM_9fWk"
+                            frameborder="0" allowfullscreen></iframe>
+                    <br><br>
+                    <span class="bottom_language">The study of and teaching of languages nurtured my fascination with communication in general.
                     I found myself drawn to different ways of communicating ideas artfully. At a certain point my
-                    interests grew to include computer languages and design. </p>
+                    interests grew to include computer languages and design.</span>
+                </p>
+            </div>
+            <div class="bg_top_photo_img center">
+
             </div>
             <div class="clear"></div>
         </div>
         <!--end container-->
-        <div class="clear"></div>
-    </div>
 
-    <div class="full_width_photos m_top_65 m_bottom_105">
-        <div class="clear"></div>
-        <div class="photos_work_image_slider_holder list_carousel slider_holder">
-            <ul id="photos_work_image_slider" class="gallery">
-
-
-                <div id="photos_work_slide_pager" class="carousel_pagination left"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
     <div class="clear"></div>
     <div class="full_width">
         <div class="photo_full_screen_image background_fixed">
             <div class="container center">
-                <div class="blog_full_screen_title">
-                    <h2>
-                        There are always flowers<br> for those who want to see them.<br><br>
-                            — Henri Matisse
-                    </h2>
+
                 </div>
             </div>
         </div>
@@ -352,40 +363,43 @@
     <div class="contact_wrapper">
         <div class="container">
             <div class="one center last">
-                {#                <img class="section_icon" src="images/icon_shoe.png" alt="____"/>#}
             </div>
             <div class="one m_bottom_100 center last">
-                <h3>
-                    Get in touch!
-                </h3>
+
             </div>
             <div class="clear"></div>
-            <div class="one m_bottom_90 center last">
-                <p class="info">Feel free to contact me:</p>
+            <div class="one m_bottom_90 center last"><br><br>
+
+                <h2>
+                    Get in Touch!
+                </h2>
+                <br>
+
+                <p class="in_touch">Feel free to contact me:</p>
 
             </div>
             <div class="clear"></div>
             <div class="clear"></div>
             <div class="one m_top_60 m_bottom_70">
                 <div class="socio_contact">
-                    {#                                        <ul>#}
-                    {#                                            <li>#}
-                    {#                                                <a href="mailto:&#104;&#111;&#108;&#108;&#097;&#064;&#118;&#097;&#110;&#105;&#116;&#121;&#099;&#108;&#097;&#105;&#114;&#101;&#046;&#099;&#111;&#109;"#}
-                    {#                                                   target="_blank" class="socio_contact_mail"></a></li>#}
-                    {#                                            <li><a href="http://www.etsy.com/shop/offbeatsweet" target="_blank"#}
-                    {#                                                   class="socio_contact_etsy"></a></li>#}
-                    {#                                            <li><a href="http://pinterest.com/vanityclaire/" target="_blank"#}
-                    {#                                                   class="socio_contact_pinterest"></a></li>#}
-                    {#                                            <li><a href="http://www.flickr.com/photos/studiofetch/" target="_blank"#}
-                    {#                                                   class="socio_contact_flickr"></a></li>#}
-                    {#                                            <li class="last"><a href="http://instagram.com/vanityclaire" target="_blank"#}
-                    {#                                                                class="socio_contact_instagram"></a></li>#}
-                    {#                                        </ul>#}
-                    {#                                    </div>#}
-                    {#                                </div>#}
-                    <div class="clear"></div>
+                    <a href="https://www.facebook.com/molly.carr.5"><img class="socio_button"
+                                                                         src="{% static 'img/logos/Facebook Round.png' %}"/>
+                        <a href="https://plus.google.com/u/0/105661497851341316830"><img class="socio_button"
+                                                                                         src="{% static 'img/logos/Google plus round.png' %}"/></a>
+                        <a href="http://instagram.com/mollydiana1/"><img class="socio_button"
+                                                                         src="{% static 'img/logos/Instagram round.png' %}"/></a>
+                        <a href="http://instagram.com/mollydiana1/"><img class="socio_button"
+                                                                         src="{% static 'img/logos/Linkedin round.png' %}"/></a>
+                        <a href="https://twitter.com/Mollydcarr"><img class="socio_button"
+                                                                      src="{% static 'img/logos/Twitter round.png' %}"/></a>
+                        <a href="https://www.youtube.com/user/mollydiana/featured?view_as=public"><img
+                                class="socio_button" src="{% static 'img/logos/Youtube round.png' %}"/></a>
 
-                </div>
+                        <div class="clear"></div>
+
+                    </a></div>
+                <br>
+
                 <div class="clear"></div>
             </div>
         </div>
@@ -395,27 +409,10 @@
         <footer>
             <div class="container center">
                 <div class="copyright">
-                    <p>Copyright 2014 MollydCarr.com</p>
+                    <p>Copyright 2014 MollydCarr.com</p><br>
                 </div>
             </div>
         </footer>
-
-        {#        <script>#}
-        {#            (function (i, s, o, g, r, a, m) {#}
-        {#                i['GoogleAnalyticsObject'] = r;#}
-        {#                i[r] = i[r] || function () {#}
-        {#                    (i[r].q = i[r].q || []).push(arguments)#}
-        {#                }, i[r].l = 1 * new Date();#}
-        {#                a = s.createElement(o),#}
-        {#                        m = s.getElementsByTagName(o)[0];#}
-        {#                a.async = 1;#}
-        {#                a.src = g;#}
-        {#                m.parentNode.insertBefore(a, m)#}
-        {#            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');#}
-        {##}
-        {#            ga('send', 'pageview');#}
-        {##}
-        {#        </script>#}
         <script>
             $(function () {
                 $('.ch-item').bind('hover', function (e) {
